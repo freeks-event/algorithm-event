@@ -1,11 +1,11 @@
 <?php
-    include "function.php";
+    //　ファイルの読み込み
 
-    //②ランダムで計算する関数の定義
-    $number = randomOmikuji();
 
-    //③それぞれの数字に対応するおみくじ関数を定義
-    $file = returnOmikuji($number);
+    //②別ファイルに定義したランダム関数を使用
+
+
+    //③別ファイルに定義したおみくじを対応させた関数を使用
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +17,7 @@
     <title>Omikuji</title>
 </head>
 <body>
-    <img src="./img/<?php echo "{$file}.jpg" ?>">
+    <!-- 画像を表示 -->
+    
 </body>
 </html>
