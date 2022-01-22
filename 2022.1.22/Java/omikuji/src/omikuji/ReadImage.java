@@ -40,5 +40,6 @@ class DrawCanvas extends JPanel{
 		super.paintComponent(g);
 		//画像の表示
 		g.drawImage(img, 0, 0, 1000, 700, this);
+//		(x=0,y=0) の位置に幅 1000, 高さ 700 の大きさで img を表示する。
 	}
 }

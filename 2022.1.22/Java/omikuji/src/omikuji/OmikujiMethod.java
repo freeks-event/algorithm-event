@@ -1,40 +1,21 @@
 package omikuji;
 
-import java.util.Random;
-
 public class OmikujiMethod {
 
 	public static void main (String[] args) {
 
 		ReadImage component = new ReadImage();
 
+		//①:1から4までの範囲で乱数を1つ生成してください
+		
 
-		// 0から3までの範囲で乱数を1つ生成する
-		Random rand = new Random();
-		int no = rand.nextInt(4);
+		//②:取得した乱数の値によって、結果を決定してください（switch文を使うこと）
+		
 
-		// 取得した乱数の値によって、結果を決定
-		String result = "";
-		if(no == 0) {
-			result = "大吉";
-		}else if(no == 1) {
-			result ="中吉";
-		}else if(no == 2) {
-			result ="吉";
-		}else {
-			result ="小吉";
-		}
+		//③:②で出した結果に.JPGを連結させてください（ex.大吉.JPG)
+        //※変数名はsbにすること 	
 
-		//appendメソッドを使って連結
-
-		String str1 = result;
-		String str2 = ".JPG";
-
-
-		StringBuilder sb = new StringBuilder();
-		sb.append(str1);
-		sb.append(str2);
-		System.out.println(sb);
+		
 		
 		component.Image(sb.toString());
 

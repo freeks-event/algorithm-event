@@ -1,40 +1,60 @@
+
 package omikuji;
 
 import java.util.Random;
+//乱数を生成するには、java.utilパッケージのRandomクラスを使うのでインポートを行います。
+ ※乱数…数字が不規則かつ等確率に現れるように配列されたもの
 
 public class OmikujiMethod {
 
 	public static void main (String[] args) {
+	ReadImage component = new ReadImage();
 
-		ReadImage component = new ReadImage();
-
-
-		// 0から3までの範囲で乱数を1つ生成する
+	① 1から4までの範囲で乱数を1つ生成する
 		Random rand = new Random();
-		int no = rand.nextInt(4);
+        //ランダムクラスのインスタンスを生成
+          ランダムクラスでは乱数を求めるメソッドが予め定義されている
+          
+		int no = rand.nextInt(4)+1;
+　　　　 //nextInt(n)メソッドではint値として乱数を取得出来る
+          ※( )の中の数字は０から数えられるため引数の値は数えられない。今回だと1-3が範囲なので+1。
 
-		// 取得した乱数の値によって、結果を決定
+	②取得した乱数の値に対応する大吉から小吉のおみくじ結果を定めてください。
 		String result = "";
-		if(no == 0) {
+		switch(no) {
+		case 0:
 			result = "大吉";
-		}else if(no == 1) {
-			result ="中吉";
-		}else if(no == 2) {
-			result ="吉";
-		}else {
+			break;
+		case 1:
+			result = "中吉";
+			break;
+		case 2:
+			result = "吉";
+			break;
+		case 3:
 			result ="小吉";
-		}
+	}
 
-		//appendメソッドを使って連結
-
+      [point]swith文の定型
+　　　　　switch (変数) {
+ 　　　　 case 値1:
+    　　　実行する処理;←式が値1に当てはまる場合に実行される
+         break;
+         }
+         
+     ③おみくじの結果に対応した画像名を出力させてください。
+　　　　　//StringBuilderクラスのappendメソッドを使うと文字列を連結出来る
 		String str1 = result;
 		String str2 = ".JPG";
-
-
+　　　　　//↑連結対象用意
+						
 		StringBuilder sb = new StringBuilder();
+        //StringBuilderクラスのインスタンス生成
+
 		sb.append(str1);
-		sb.append(str2);
-		System.out.println(sb);
+	   　sb.append(str2);
+	   　System.out.println(sb);
+　　　　 //対象文字列.append(追加文字列）
 		
 		component.Image(sb.toString());
 
