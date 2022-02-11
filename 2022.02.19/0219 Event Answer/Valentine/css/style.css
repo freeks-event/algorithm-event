@@ -1,0 +1,47 @@
+.wrapper{
+    width: 760px;
+}
+
+.clearfix::after { 
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+.left-top{
+    height: 222px;
+}
+
+.left-top-left{
+    float:left;
+    height: 222px;
+}
+
+.left-top-right{
+    float:left;
+    height: 222px;
+}
+
+.right{
+    float: left;
+}
+
+.left{
+    float:left;
+}
+
+.right-up{
+    height: 147px;
+}
+
+.right-bottom-left{
+    float: left;
+}
+
+.right-bottom-middle{
+    float: left;
+}
+
+.right-bottom-right{
+    float: left;
+}
