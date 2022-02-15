@@ -1,0 +1,21 @@
+.row1-left{
+    padding-left: 50px;
+}
+
+.row1-middle{
+    transform: rotate(90deg);
+}
+
+.row1-right{
+    padding-left: 25px;
+}
+
+.row3-middle{
+    transform: rotate(180deg);
+}
+
+.row3-left{
+    padding-right: 200px;
+}
+
+/* paddingとか書いてないとこまでつられて移動してる...？ */
