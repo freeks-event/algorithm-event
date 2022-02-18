@@ -9,29 +9,57 @@
 }
 
 .left{
-    float: left;
-    transform: rotateZ(90deg); 
+    float:left;
+    margin-right: 50px;   
+}
+
+.left-top{
+    height: 222px;
+}
+
+.left-top-left{
+    float:left;
+    height: 222px;
 }
 
 .left-top-right{
-    transform: rotateZ(45deg);
+    float:left;
+    height: 222px;
+    transform: rotate(180deg);
+    padding: 50px;
 }
 
+.right{
+    float: left;
+    width: 900px;
+}
 
 .right-up{
     height: 147px;
-    transform: rotateZ(180deg);
-/* transform: rotateZ(180deg); は変更しないこと */
+    transform: rotate(180deg);
+}
+
+.right .right-up{
+    transform: rotate(270deg);
 }
 
 .right-bottom-left{
-    position: relative; top:150px; left:100px;
+    float: left;
+    margin-left: 50px;   
 }
 
 .right-bottom-middle{
-    margin-left: 50px;
+    float: left;
+    position:absolute; top:35px; left:150px; 
 }
 
 .right-bottom-right{
-    position: absolute; top:250px; left:50px
-} 
+    float: left;
+    padding-bottom: 15px;
+    margin: 15px;
+    transform: rotate(90deg);
+}
+
+.right-bottom .right-bottom-right{
+    margin-left: 25px;
+}
